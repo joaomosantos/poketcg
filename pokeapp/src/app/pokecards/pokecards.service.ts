@@ -11,7 +11,7 @@ export class PokecardsService {
     constructor(private http: HttpClient) {}
 
     cards(): Observable<Card[]> {
-        return this.http.get<Card[]>(`${URL_API}/cards`)
-            .pipe(map(response => response));
+        return this.http.get<any>(`${URL_API}/cards`)
+            .pipe(map(response => response.cards));
     }
 }
