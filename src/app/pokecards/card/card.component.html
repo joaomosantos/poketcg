@@ -3,8 +3,10 @@
         <img class="card-image" [src]="card?.imageUrl" alt="">
     </div>
     <div class="card-box-content">
-        <p class="card-content">Id: {{card?.id}}</p>
-        <p class="card-content">Nome: {{card?.name}}</p>
-        <p class="card-content">Tipo: {{card?.types || "N/A"}}</p>
+        <div class="wrapper-content">
+            <p class="card-content">Id: {{card?.id}}</p>
+            <p class="card-content">Nome: {{card?.name}}</p>
+            <p class="card-content">Tipo: {{card?.types || "N/A"}}</p>
+        </div>
     </div>
 </div>
