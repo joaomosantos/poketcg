@@ -14,4 +14,9 @@ export class PokecardsService {
         return this.http.get<any>(`${URL_API}/cards`)
             .pipe(map(response => response.cards));
     }
+
+    detailById(id: string): Observable<Card> {
+        return this.http.get<any>(`${URL_API}/cards/${id}`)
+            .pipe(map(response => response.card));
+    }
 }

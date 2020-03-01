@@ -11,10 +11,10 @@ export class PokecardsComponent implements OnInit {
 
   cards: Card[];
 
-  constructor(private PokecardsService: PokecardsService) { }
+  constructor(private pokecardsService: PokecardsService) { }
 
   ngOnInit(): void {
-    this.PokecardsService
+    this.pokecardsService
       .cards()
       .subscribe(cards => this.cards = cards);
   }
