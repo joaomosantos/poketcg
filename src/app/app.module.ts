@@ -8,6 +8,7 @@ import { CardComponent } from './pokecards/card/card.component';
 import { PokecardsService } from './pokecards/pokecards.service';
 import { PokedetailsComponent } from './pokedetails/pokedetails.component';
 import { DetailComponent } from './pokedetails/detail/detail.component';
+import { OrdenarNome } from './order.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { DetailComponent } from './pokedetails/detail/detail.component';
     PokecardsComponent,
     CardComponent,
     PokedetailsComponent,
-    DetailComponent
+    DetailComponent,
+    OrdenarNome
   ],
   imports: [
     BrowserModule,
