@@ -1,0 +1,31 @@
+.title-detail {
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #fff;
+    max-width: 877px;
+    margin: 1em auto 0;
+    padding: .2em 0;
+    border-radius: 4px;
+}
+
+.btn-voltar {
+    display: block;
+    width: 80px;
+    margin: 1em auto 0;
+    text-decoration: none;
+    cursor: pointer;
+    padding: .5em 1em;
+    color: #fff;
+    background-color: #e11256;
+    border-radius: 25px;
+
+    .text-btn {
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    .icon-btn {
+        @extend .text-btn;
+        margin-right: .5em;
+    }
+}

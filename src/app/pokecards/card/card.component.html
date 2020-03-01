@@ -6,10 +6,10 @@
         <div class="wrapper-content">
             <p class="card-content">Id: {{card?.id}}</p>
             <p class="card-content">Nome: {{card?.name}}</p>
-            <p class="card-content">Tipo: {{card?.types || "N/A"}}</p>
+            <p class="card-content">Tipo: {{card?.types || card?.supertype}}</p>
             <a class="card-btn-detail" [routerLink]="['/detail', card?.id]">
                 <img class="icon-btn" src="./assets/pokebola.png" alt="Pokebola" title="Pokebola">
-                <span class="text-btn">Pokedex</span>
+                <span class="text-btn">Ir Detalhe</span>
             </a>
         </div>
     </div>

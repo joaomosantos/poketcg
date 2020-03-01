@@ -1,2 +1,10 @@
-<p>{{card?.name}}</p>
-<a routerLink="/">cards</a>
+<div class="wrapper-container">
+    <div class="cards-container">
+        <h1 class="title-detail">Descrição do Cartão</h1>
+        <app-detail [card]="card"></app-detail>
+        <a class="btn-voltar" routerLink="/">
+            <img class="icon-btn" src="./assets/pokebola.png" alt="Pokebola" title="Pokebola">
+            <span class="text-btn">Voltar</span>
+        </a>
+    </div>
+</div>

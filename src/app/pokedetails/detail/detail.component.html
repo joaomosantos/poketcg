@@ -1,1 +1,33 @@
-<p>detail works!</p>
+<div class="card-container">
+    <div class="card-box-image">
+        <img class="card-image" [src]="card?.imageUrlHiRes" [alt]="card?.name" [title]="card?.name">
+    </div>
+    <div class="card-box-content">
+        <div class="wrapper-content">
+            <h3 class="title-description">Descrições</h3>
+            <ul class="card-content">
+                <li>Id: {{card?.id}}</li>
+                <li>Nome: {{card?.name}}</li>
+            </ul>
+            <h3 class="title-description">Tipo(s)</h3>
+            <ul class="card-content">
+                <li>Tipo: {{card?.types || card?.supertype}}</li>
+            </ul>
+            <h3 class="title-description" *ngIf="card?.attacks">Ataque(s)</h3>
+            <ul class="card-content" *ngFor="let attack of card?.attacks">
+                <li>Nome: {{attack.name}}</li>
+                <li class="no-style">Dano: {{attack.damage}}</li>
+                <li class="no-style">Custo de energia: {{attack.convertedEnergyCost}}</li>
+                <li class="no-style">Descrição: {{attack.text}}</li>
+            </ul>
+            <h3 class="title-description" *ngIf="card?.resistances">Resistencia(s)</h3>
+            <ul class="card-content" *ngFor="let resistance of card?.resistances">
+                <li>Tipo: {{resistance.type}} ({{resistance.value}})</li>
+            </ul>
+            <h3 class="title-description" *ngIf="card?.weaknesses">Resistencia(s)</h3>
+            <ul class="card-content" *ngFor="let weakness of card?.weaknesses">
+                <li>Tipo: {{weakness.type}} ({{weakness.value}})</li>
+            </ul>
+        </div>
+    </div>
+</div>
