@@ -1,12 +1,16 @@
 <div class="card-container">
     <div class="card-box-image">
-        <img class="card-image" [src]="card?.imageUrl" alt="">
+        <img class="card-image" [src]="card?.imageUrl" [alt]="card?.name" [title]="card?.name">
     </div>
     <div class="card-box-content">
         <div class="wrapper-content">
             <p class="card-content">Id: {{card?.id}}</p>
             <p class="card-content">Nome: {{card?.name}}</p>
             <p class="card-content">Tipo: {{card?.types || "N/A"}}</p>
+            <a class="card-btn-detail" [routerLink]="['/detail', card?.id]">
+                <img class="icon-btn" src="./assets/pokebola.png" alt="Pokebola" title="Pokebola">
+                <span class="text-btn">Pokedex</span>
+            </a>
         </div>
     </div>
 </div>

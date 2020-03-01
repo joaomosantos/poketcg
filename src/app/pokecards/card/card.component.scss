@@ -40,7 +40,27 @@
     }
 
     .card-content {
-        margin: .5em 0 0;
+        margin: 0 0 .5em;
         color: #fff;
+    }
+
+    .card-btn-detail {
+        display: block;
+        text-decoration: none;
+        cursor: pointer;
+        padding: .5em 1em;
+        color: #fff;
+        background-color: #e11256;
+        border-radius: 2px;
+
+        .text-btn {
+            vertical-align: middle;
+            display: inline-block;
+        }
+
+        .icon-btn {
+            @extend .text-btn;
+            margin-right: .5em;
+        }
     }
 }
