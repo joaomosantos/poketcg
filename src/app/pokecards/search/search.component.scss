@@ -1,0 +1,25 @@
+.container-search {
+    text-align: center;
+
+    .search-title {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #fff;
+        background: rgba(0, 0, 0, .5);
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 1em;
+        padding: .2em;
+    }
+
+    .search-card {
+        width: 50%;
+        height: 30px;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 1em auto;
+        border-radius: 4px;
+        font-size: 1.2em;
+        padding: .5em;
+    }
+}

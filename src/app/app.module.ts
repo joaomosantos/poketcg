@@ -11,6 +11,7 @@ import { PokedetailsComponent } from './pokedetails/pokedetails.component';
 import { DetailComponent } from './pokedetails/detail/detail.component';
 import { OrdenarNome } from './order.pipe';
 import { Search } from './pokecards/search.pipe';
+import { SearchComponent } from './pokecards/search/search.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { Search } from './pokecards/search.pipe';
     PokedetailsComponent,
     DetailComponent,
     OrdenarNome,
-    Search
+    Search,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

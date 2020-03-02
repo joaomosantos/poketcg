@@ -10,10 +10,13 @@ import { PokecardsService } from './pokecards.service';
 export class PokecardsComponent implements OnInit {
 
   cards: Card[];
-
   searchName: string;
 
   constructor(private pokecardsService: PokecardsService) { }
+
+  searchReceiver(event): void {
+    this.searchName = event;
+  }
 
   ngOnInit(): void {
     this.pokecardsService
