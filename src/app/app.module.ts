@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PokecardsComponent } from './pokecards/pokecards.component';
@@ -9,6 +10,8 @@ import { PokecardsService } from './pokecards/pokecards.service';
 import { PokedetailsComponent } from './pokedetails/pokedetails.component';
 import { DetailComponent } from './pokedetails/detail/detail.component';
 import { OrdenarNome } from './order.pipe';
+import { Search } from './pokecards/search.pipe';
+
 
 @NgModule({
   declarations: [
@@ -17,12 +20,14 @@ import { OrdenarNome } from './order.pipe';
     CardComponent,
     PokedetailsComponent,
     DetailComponent,
-    OrdenarNome
+    OrdenarNome,
+    Search
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [PokecardsService],
   bootstrap: [AppComponent]

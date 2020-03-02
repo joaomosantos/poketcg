@@ -11,6 +11,8 @@ export class PokecardsComponent implements OnInit {
 
   cards: Card[];
 
+  searchName: string;
+
   constructor(private pokecardsService: PokecardsService) { }
 
   ngOnInit(): void {

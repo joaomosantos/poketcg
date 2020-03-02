@@ -1,5 +1,9 @@
 <div class="wrapper-container">
+    <div class="container-search">
+        <span class="search-title">Buscar:</span>
+        <input class="search-card" type="text" placeholder="exemplo: charmander" [(ngModel)]="searchName" />
+    </div>
     <div class="cards-container">
-        <app-card *ngFor="let card of (cards | ordenarNome)" [card]="card"></app-card>
+        <app-card *ngFor="let card of (cards | ordenarNome | search:searchName)" [card]="card"></app-card>
     </div>
 </div>
